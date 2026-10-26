@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body, #root {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #000000 !important;
+    color: #f4f4f5;
+    min-height: 100vh;
+  }
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Custom scrollbar for telemetry logs and consoles */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ea580c;
+}
+
+/* Futuristic Cyber Grid Pattern */
+.cyber-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(249, 115, 22, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(249, 115, 22, 0.04) 1px, transparent 1px);
+}
+
+.cyber-grid-dense {
+  background-size: 16px 16px;
+  background-image: 
+    linear-gradient(to right, rgba(249, 115, 22, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(249, 115, 22, 0.07) 1px, transparent 1px);
+}
+
+/* Futuristic Neon Orange Glows */
+.glow-orange {
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.25);
+}
+
+.glow-orange-sm {
+  box-shadow: 0 0 10px rgba(249, 115, 22, 0.2);
+}
+
+.glow-orange-text {
+  text-shadow: 0 0 8px rgba(249, 115, 22, 0.6);
+}
+
+@keyframes radar-sweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-radar {
+  animation: radar-sweep 4s linear infinite;
+}
+
+@keyframes pulse-orange {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 6px #f97316); }
+  50% { opacity: 0.6; filter: drop-shadow(0 0 2px #f97316); }
+}
+
+.animate-pulse-orange {
+  animation: pulse-orange 2.4s ease-in-out infinite;
+}

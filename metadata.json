@@ -1,0 +1,6 @@
+{
+  "name": "VortexMark - Forensic Watermarking & Secured RTMP Server",
+  "description": "Enterprise forensic watermarking suite, imperceptible steganographic leak detection, and hardened RTMP streaming server management with AI-powered forensic threat analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
